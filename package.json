@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/VincentPauley/rts-game#readme",
   "dependencies": {
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "vue": "^2.5.22"
   }
 }
