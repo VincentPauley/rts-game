@@ -1,0 +1,29 @@
+{
+  "name": "rts-game",
+  "version": "1.0.0",
+  "description": "RTS Style City mgmt game",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VincentPauley/rts-game.git"
+  },
+  "keywords": [
+    "rts",
+    "game",
+    "browser",
+    "city"
+  ],
+  "author": "Vincent Pauley",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/VincentPauley/rts-game/issues"
+  },
+  "homepage": "https://github.com/VincentPauley/rts-game#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
