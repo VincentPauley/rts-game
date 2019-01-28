@@ -205,7 +205,19 @@ eval("/* WEBPACK VAR INJECTION */(function(global) {var scope = (typeof global !
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_TimeDisplay_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/TimeDisplay.vue */ \"./src/components/TimeDisplay.vue\");\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n\n\n\n\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n    data() {\n        return {\n            header: 'RTS'\n        };\n    },\n    components: { TimeDisplay: _components_TimeDisplay_vue__WEBPACK_IMPORTED_MODULE_0__[\"default\"] },\n});\n\n\n//# sourceURL=webpack:///./src/App.vue?./node_modules/vue-loader/lib??vue-loader-options");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_TimeDisplay_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/TimeDisplay.vue */ \"./src/components/TimeDisplay.vue\");\n/* harmony import */ var _components_Citizen_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/Citizen.vue */ \"./src/components/Citizen.vue\");\n/* harmony import */ var _citizen_generator__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./citizen-generator */ \"./src/citizen-generator.js\");\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n\n\n// components\n\n\n\n\n\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n    data() {\n        return {\n            header: 'RTS',\n            citizens: null\n        };\n    },\n    methods: {\n        create_citizens() {\n\n            this.citizens = Object(_citizen_generator__WEBPACK_IMPORTED_MODULE_2__[\"randomCitizenList\"])();\n        }\n    },\n    components: { TimeDisplay: _components_TimeDisplay_vue__WEBPACK_IMPORTED_MODULE_0__[\"default\"], Citizen: _components_Citizen_vue__WEBPACK_IMPORTED_MODULE_1__[\"default\"] },\n    created() {\n\n        this.create_citizens();\n    }\n});\n\n\n//# sourceURL=webpack:///./src/App.vue?./node_modules/vue-loader/lib??vue-loader-options");
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/index.js?!./src/components/Citizen.vue?vue&type=script&lang=js&":
+/*!***************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib??vue-loader-options!./src/components/Citizen.vue?vue&type=script&lang=js& ***!
+  \***************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n//\n//\n//\n//\n//\n//\n\n\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n    props: [ 'citizen_attributes' ]\n});\n\n\n//# sourceURL=webpack:///./src/components/Citizen.vue?./node_modules/vue-loader/lib??vue-loader-options");
 
 /***/ }),
 
@@ -229,7 +241,19 @@ eval("__webpack_require__.r(__webpack_exports__);\n//\n//\n//\n//\n//\n//\n//\n/
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return render; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"staticRenderFns\", function() { return staticRenderFns; });\nvar render = function() {\n  var _vm = this\n  var _h = _vm.$createElement\n  var _c = _vm._self._c || _h\n  return _c(\n    \"div\",\n    [_c(\"h1\", [_vm._v(_vm._s(_vm.header))]), _vm._v(\" \"), _c(\"time-display\")],\n    1\n  )\n}\nvar staticRenderFns = []\nrender._withStripped = true\n\n\n\n//# sourceURL=webpack:///./src/App.vue?./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return render; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"staticRenderFns\", function() { return staticRenderFns; });\nvar render = function() {\n  var _vm = this\n  var _h = _vm.$createElement\n  var _c = _vm._self._c || _h\n  return _c(\n    \"div\",\n    [\n      _c(\"h1\", [_vm._v(_vm._s(_vm.header))]),\n      _vm._v(\" \"),\n      _c(\"time-display\"),\n      _vm._v(\" \"),\n      _vm.citizens\n        ? _c(\n            \"div\",\n            [\n              _c(\"p\", [_vm._v(\"Citizens:\")]),\n              _vm._v(\" \"),\n              _vm._l(_vm.citizens, function(citizen) {\n                return _c(\"citizen\", {\n                  key: citizen.id,\n                  attrs: { citizen_attributes: citizen }\n                })\n              })\n            ],\n            2\n          )\n        : _vm._e()\n    ],\n    1\n  )\n}\nvar staticRenderFns = []\nrender._withStripped = true\n\n\n\n//# sourceURL=webpack:///./src/App.vue?./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options");
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./src/components/Citizen.vue?vue&type=template&id=0f133968&":
+/*!*************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./src/components/Citizen.vue?vue&type=template&id=0f133968& ***!
+  \*************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return render; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"staticRenderFns\", function() { return staticRenderFns; });\nvar render = function() {\n  var _vm = this\n  var _h = _vm.$createElement\n  var _c = _vm._self._c || _h\n  return _c(\"div\", [\n    _c(\"h4\", [\n      _vm._v(\n        _vm._s(\n          _vm.citizen_attributes.first_name +\n            \" \" +\n            _vm.citizen_attributes.last_name\n        ) + \" \"\n      ),\n      _c(\"small\", [_vm._v(_vm._s(_vm.citizen_attributes.gender))])\n    ])\n  ])\n}\nvar staticRenderFns = []\nrender._withStripped = true\n\n\n\n//# sourceURL=webpack:///./src/components/Citizen.vue?./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options");
 
 /***/ }),
 
@@ -335,7 +359,67 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _nod
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ \"./node_modules/vue/dist/vue.js\");\n/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(vue__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _App_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./App.vue */ \"./src/App.vue\");\n\n\n// components:\n\n\nnew vue__WEBPACK_IMPORTED_MODULE_0___default.a({\n    el: \"#app\",\n    render: h => h(_App_vue__WEBPACK_IMPORTED_MODULE_1__[\"default\"])\n});\n\n//# sourceURL=webpack:///./src/app.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ \"./node_modules/vue/dist/vue.js\");\n/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(vue__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _App_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./App.vue */ \"./src/App.vue\");\n\n\n\n\n\n// components:\n\n\nnew vue__WEBPACK_IMPORTED_MODULE_0___default.a({\n    el: \"#app\",\n    render: h => h(_App_vue__WEBPACK_IMPORTED_MODULE_1__[\"default\"])\n});\n\n//# sourceURL=webpack:///./src/app.js?");
+
+/***/ }),
+
+/***/ "./src/citizen-generator.js":
+/*!**********************************!*\
+  !*** ./src/citizen-generator.js ***!
+  \**********************************/
+/*! exports provided: randomCitizenList */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"randomCitizenList\", function() { return randomCitizenList; });\n/* harmony import */ var _common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./common */ \"./src/common.js\");\n\n\n/**\n * Function: assign_name_to_citizen\n * \n * Uses gender to create a random name for \n * the citizen.\n * \n * @param {object} citizen - start of citizen object, includes gender key \n */\nfunction assign_name_to_citizen( citizen ) {\n\n    const name_list = {\n        \"F\": [ 'Sophie', 'Ellie', 'Denise', 'Rachel', 'Emma', 'Sarah', 'Amanda' ],\n        \"M\": [ 'Alex', 'Ryan', 'Peter', 'Edward', 'Carl', 'Andre', 'Chuck', 'Maurice' ]\n    };\n\n    const last_names = [ 'Chesterley', 'Sanderson', 'Ramirez', 'Shaw', 'Peverley', 'Stevens', 'Brown' ];\n\n    return { \n        ...citizen, \n        first_name: Object(_common__WEBPACK_IMPORTED_MODULE_0__[\"randomArraySelection\"])( name_list[ citizen.gender ] ), \n        last_name: Object(_common__WEBPACK_IMPORTED_MODULE_0__[\"randomArraySelection\"])( last_names )\n    };\n}\n\nfunction randomCitizenList() {\n\n    let citizens = [  ];\n\n    for( let i=0; i<10; i++ ) {\n\n        citizens.push({ gender: Object(_common__WEBPACK_IMPORTED_MODULE_0__[\"randomArraySelection\"])([ 'M', 'F' ]) });\n    }\n\n    const name_expanded = citizens\n                            .map( c => assign_name_to_citizen( c ))\n                            .map( c => ({ ...c, id: Object(_common__WEBPACK_IMPORTED_MODULE_0__[\"randomAlphaNumericString\"])(10) }) );\n\n    return name_expanded;\n}\n\n//# sourceURL=webpack:///./src/citizen-generator.js?");
+
+/***/ }),
+
+/***/ "./src/common.js":
+/*!***********************!*\
+  !*** ./src/common.js ***!
+  \***********************/
+/*! exports provided: randomArraySelection, randomAlphaNumericString */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"randomArraySelection\", function() { return randomArraySelection; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"randomAlphaNumericString\", function() { return randomAlphaNumericString; });\n\nfunction randomArraySelection( arrayVal ) {\n\n    return arrayVal[ Math.floor( arrayVal.length * Math.random() ) ];\n}\n/**\n * Function: randomAlphaNumericString\n * \n * Generates a random alphanumeric string mostly \n * for creating unique identifiers for list iteratiolns\n * \n * @param {interger} stringLength - length of random string\n */\nfunction randomAlphaNumericString( stringLength ) {\n\n    const chars = 'abcdefghijklmnopqrstuvwxyz0123456789'.split('');\n\n    let string = '';\n\n    for( let i=0; i<stringLength; i++ ) {\n\n        const random_char = randomArraySelection( chars );\n\n        string += /^\\d$/.test( random_char ) ? random_char :/**/  Math.random() > .5 ? random_char.toUpperCase() : random_char  /**/; \n\n    }\n\n    return string;\n}\n\n//# sourceURL=webpack:///./src/common.js?");
+
+/***/ }),
+
+/***/ "./src/components/Citizen.vue":
+/*!************************************!*\
+  !*** ./src/components/Citizen.vue ***!
+  \************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _Citizen_vue_vue_type_template_id_0f133968___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Citizen.vue?vue&type=template&id=0f133968& */ \"./src/components/Citizen.vue?vue&type=template&id=0f133968&\");\n/* harmony import */ var _Citizen_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Citizen.vue?vue&type=script&lang=js& */ \"./src/components/Citizen.vue?vue&type=script&lang=js&\");\n/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ \"./node_modules/vue-loader/lib/runtime/componentNormalizer.js\");\n\n\n\n\n\n/* normalize component */\n\nvar component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__[\"default\"])(\n  _Citizen_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__[\"default\"],\n  _Citizen_vue_vue_type_template_id_0f133968___WEBPACK_IMPORTED_MODULE_0__[\"render\"],\n  _Citizen_vue_vue_type_template_id_0f133968___WEBPACK_IMPORTED_MODULE_0__[\"staticRenderFns\"],\n  false,\n  null,\n  null,\n  null\n  \n)\n\n/* hot reload */\nif (false) { var api; }\ncomponent.options.__file = \"src/components/Citizen.vue\"\n/* harmony default export */ __webpack_exports__[\"default\"] = (component.exports);\n\n//# sourceURL=webpack:///./src/components/Citizen.vue?");
+
+/***/ }),
+
+/***/ "./src/components/Citizen.vue?vue&type=script&lang=js&":
+/*!*************************************************************!*\
+  !*** ./src/components/Citizen.vue?vue&type=script&lang=js& ***!
+  \*************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _node_modules_vue_loader_lib_index_js_vue_loader_options_Citizen_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../node_modules/vue-loader/lib??vue-loader-options!./Citizen.vue?vue&type=script&lang=js& */ \"./node_modules/vue-loader/lib/index.js?!./src/components/Citizen.vue?vue&type=script&lang=js&\");\n/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__[\"default\"] = (_node_modules_vue_loader_lib_index_js_vue_loader_options_Citizen_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__[\"default\"]); \n\n//# sourceURL=webpack:///./src/components/Citizen.vue?");
+
+/***/ }),
+
+/***/ "./src/components/Citizen.vue?vue&type=template&id=0f133968&":
+/*!*******************************************************************!*\
+  !*** ./src/components/Citizen.vue?vue&type=template&id=0f133968& ***!
+  \*******************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Citizen_vue_vue_type_template_id_0f133968___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../node_modules/vue-loader/lib??vue-loader-options!./Citizen.vue?vue&type=template&id=0f133968& */ \"./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./src/components/Citizen.vue?vue&type=template&id=0f133968&\");\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Citizen_vue_vue_type_template_id_0f133968___WEBPACK_IMPORTED_MODULE_0__[\"render\"]; });\n\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"staticRenderFns\", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Citizen_vue_vue_type_template_id_0f133968___WEBPACK_IMPORTED_MODULE_0__[\"staticRenderFns\"]; });\n\n\n\n//# sourceURL=webpack:///./src/components/Citizen.vue?");
 
 /***/ }),
 

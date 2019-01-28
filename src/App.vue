@@ -3,6 +3,11 @@
         <h1>{{ header }}</h1>
 
         <time-display></time-display>
+        
+        <div v-if="citizens">
+            <p>Citizens:</p>
+            <citizen v-for="citizen in citizens" :key="citizen.id" :citizen_attributes="citizen"></citizen>
+        </div>
     </div>
 </template>
 
@@ -14,14 +19,29 @@
 
 <script>
 
+    // components
     import TimeDisplay from './components/TimeDisplay.vue';
+    import Citizen from './components/Citizen.vue';
+
+    import { randomCitizenList } from './citizen-generator';
 
     export default {
         data() {
             return {
-                header: 'RTS'
+                header: 'RTS',
+                citizens: null
             };
         },
-        components: { TimeDisplay },
+        methods: {
+            create_citizens() {
+
+                this.citizens = randomCitizenList();
+            }
+        },
+        components: { TimeDisplay, Citizen },
+        created() {
+
+            this.create_citizens();
+        }
     }
 </script>
