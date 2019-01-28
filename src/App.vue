@@ -1,33 +1,27 @@
 <template>
     <div>
         <h1>{{ header }}</h1>
-        <h3>{{ time }}</h3>
+
+        <time-display></time-display>
     </div>
 </template>
 
+<style>
+    * {
+        text-align:center;
+    }
+</style>
+
 <script>
+
+    import TimeDisplay from './components/TimeDisplay.vue';
 
     export default {
         data() {
             return {
-                header: 'Wonderful RTS',
-                time: null
+                header: 'RTS'
             };
         },
-        methods: {
-            start_game_clock() {
-
-                const root = this;
-
-                setInterval(() => {
-
-                    root.time = new Date();
-                }, 1000 );
-            }
-        },
-        created() {
-
-            this.start_game_clock();
-        }
+        components: { TimeDisplay },
     }
 </script>
