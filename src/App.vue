@@ -6,15 +6,15 @@
         
         <div v-if="citizens">
             <p>Citizens:</p>
-            <citizen v-for="citizen in citizens" :key="citizen.id" :citizen_attributes="citizen"></citizen>
+
+            <ul class="list-group">
+                <citizen v-for="citizen in citizens" :key="citizen.id" :citizen_attributes="citizen"></citizen>
+            </ul>
         </div>
     </div>
 </template>
 
 <style>
-    * {
-        text-align:center;
-    }
 </style>
 
 <script>

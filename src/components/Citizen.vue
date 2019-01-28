@@ -1,7 +1,7 @@
 <template>
-    <div>
+    <li class="list-group-item">
         <h4>{{ citizen_attributes.first_name + ' ' + citizen_attributes.last_name }} <small>{{ citizen_attributes.gender }}</small></h4>    
-    </div>
+    </li>
 </template>
 
 <script>

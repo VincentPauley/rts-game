@@ -25,8 +25,11 @@
   },
   "homepage": "https://github.com/VincentPauley/rts-game#readme",
   "dependencies": {
+    "bootstrap": "^4.2.1",
     "crypto": "^1.0.1",
     "express": "^4.16.4",
+    "jquery": "^3.3.1",
+    "popper": "^1.0.1",
     "vue": "^2.5.22"
   },
   "devDependencies": {
