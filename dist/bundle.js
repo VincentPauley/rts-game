@@ -217,7 +217,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _com
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n//\n//\n//\n//\n//\n//\n\n\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n    props: [ 'citizen_attributes' ]\n});\n\n\n//# sourceURL=webpack:///./src/components/Citizen.vue?./node_modules/vue-loader/lib??vue-loader-options");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _mixins_randomSuffix__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../mixins/randomSuffix */ \"./src/mixins/randomSuffix.js\");\n//\n//\n//\n//\n//\n//\n//\n\n\n\n\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n    props: [ 'citizen_attributes' ],\n    mixins: [ _mixins_randomSuffix__WEBPACK_IMPORTED_MODULE_0__[\"default\"] ] // < include mixins into this property\n});\n\n\n//# sourceURL=webpack:///./src/components/Citizen.vue?./node_modules/vue-loader/lib??vue-loader-options");
 
 /***/ }),
 
@@ -253,7 +253,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return render; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"staticRenderFns\", function() { return staticRenderFns; });\nvar render = function() {\n  var _vm = this\n  var _h = _vm.$createElement\n  var _c = _vm._self._c || _h\n  return _c(\"li\", { staticClass: \"list-group-item\" }, [\n    _c(\"h4\", [\n      _vm._v(\n        _vm._s(\n          _vm.citizen_attributes.first_name +\n            \" \" +\n            _vm.citizen_attributes.last_name\n        ) + \" \"\n      ),\n      _c(\"small\", [_vm._v(_vm._s(_vm.citizen_attributes.gender))])\n    ])\n  ])\n}\nvar staticRenderFns = []\nrender._withStripped = true\n\n\n\n//# sourceURL=webpack:///./src/components/Citizen.vue?./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return render; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"staticRenderFns\", function() { return staticRenderFns; });\nvar render = function() {\n  var _vm = this\n  var _h = _vm.$createElement\n  var _c = _vm._self._c || _h\n  return _c(\"li\", { staticClass: \"list-group-item\" }, [\n    _c(\"h4\", [\n      _vm._v(\n        _vm._s(\n          _vm.suffix +\n            \" \" +\n            _vm.citizen_attributes.first_name +\n            \" \" +\n            _vm.citizen_attributes.last_name\n        ) + \" \"\n      ),\n      _c(\"small\", [_vm._v(_vm._s(_vm.citizen_attributes.gender))])\n    ])\n  ])\n}\nvar staticRenderFns = []\nrender._withStripped = true\n\n\n\n//# sourceURL=webpack:///./src/components/Citizen.vue?./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options");
 
 /***/ }),
 
@@ -347,7 +347,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _nod
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ \"./node_modules/vue/dist/vue.js\");\n/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(vue__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! bootstrap/dist/css/bootstrap.min.css */ \"./node_modules/bootstrap/dist/css/bootstrap.min.css\");\n/* harmony import */ var bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _App_vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./App.vue */ \"./src/App.vue\");\n\r\n\r\n\r\n\r\n// components:\r\n\r\n\r\nnew vue__WEBPACK_IMPORTED_MODULE_0___default.a({\r\n    el: \"#app\",\r\n    render: h => h(_App_vue__WEBPACK_IMPORTED_MODULE_2__[\"default\"])\r\n});\n\n//# sourceURL=webpack:///./src/app.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ \"./node_modules/vue/dist/vue.js\");\n/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(vue__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _my_vue_plugin_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./my-vue-plugin.js */ \"./src/my-vue-plugin.js\");\n/* harmony import */ var bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! bootstrap/dist/css/bootstrap.min.css */ \"./node_modules/bootstrap/dist/css/bootstrap.min.css\");\n/* harmony import */ var bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _App_vue__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./App.vue */ \"./src/App.vue\");\n\r\n\r\n\r\n// use a specific plugin\r\nvue__WEBPACK_IMPORTED_MODULE_0___default.a.use( _my_vue_plugin_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"] );\r\n\r\n\r\n\r\n// components:\r\n\r\n\r\nnew vue__WEBPACK_IMPORTED_MODULE_0___default.a({\r\n    el: \"#app\",\r\n    render: h => h(_App_vue__WEBPACK_IMPORTED_MODULE_3__[\"default\"])\r\n});\n\n//# sourceURL=webpack:///./src/app.js?");
 
 /***/ }),
 
@@ -456,6 +456,30 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _nod
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_TimeDisplay_vue_vue_type_template_id_a3c8ae96___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../node_modules/vue-loader/lib??vue-loader-options!./TimeDisplay.vue?vue&type=template&id=a3c8ae96& */ \"./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./src/components/TimeDisplay.vue?vue&type=template&id=a3c8ae96&\");\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_TimeDisplay_vue_vue_type_template_id_a3c8ae96___WEBPACK_IMPORTED_MODULE_0__[\"render\"]; });\n\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"staticRenderFns\", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_TimeDisplay_vue_vue_type_template_id_a3c8ae96___WEBPACK_IMPORTED_MODULE_0__[\"staticRenderFns\"]; });\n\n\n\n//# sourceURL=webpack:///./src/components/TimeDisplay.vue?");
+
+/***/ }),
+
+/***/ "./src/mixins/randomSuffix.js":
+/*!************************************!*\
+  !*** ./src/mixins/randomSuffix.js ***!
+  \************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// mixins have access to the Vue instance properties from which\r\n// they are called.\r\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\r\n    computed: {\r\n        suffix() {\r\n\r\n            return this.citizen_attributes.gender === 'M' ? 'Mr' : Math.random() > .5 ? 'Mrs' : 'Ms';\r\n        }\r\n    }\r\n});\r\n// could then use this with any component that imported it\n\n//# sourceURL=webpack:///./src/mixins/randomSuffix.js?");
+
+/***/ }),
+
+/***/ "./src/my-vue-plugin.js":
+/*!******************************!*\
+  !*** ./src/my-vue-plugin.js ***!
+  \******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\nconst MyPlugin = {\r\n\r\n    // install method is the only thing required in a Vue object\r\n    // takes in Global vue obejct and user-defined options\r\n    install( Vue, options ) {\r\n\r\n        Vue.say_hello = function() {\r\n\r\n            console.log( 'Why Hello there!' );\r\n        }\r\n\r\n        // Call Vue.mixin to inject functionality into all components\r\n        // Vue.mixin({\r\n\r\n        //     // anything added to mixin will be added to all componenents\r\n        //     mounted() { \r\n\r\n        //         console.log( 'Mounted' );\r\n        //     }\r\n        // });\r\n    }\r\n};\r\n\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (MyPlugin);\n\n//# sourceURL=webpack:///./src/my-vue-plugin.js?");
 
 /***/ }),
 

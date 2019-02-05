@@ -1,4 +1,8 @@
 import Vue from 'vue';
+import MyPlugin from './my-vue-plugin.js';
+
+// use a specific plugin
+Vue.use( MyPlugin );
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
